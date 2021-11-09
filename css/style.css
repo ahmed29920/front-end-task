@@ -1,0 +1,492 @@
+body{ 
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***  NAVBAR  ***/
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.navbar {
+    position: fixed;
+    width: -webkit-fill-available ; 
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0.9rem;
+    background-color: teal;
+    color: #fff;
+}
+.nav-links a {
+    color: #fff;
+}
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+    z-index: 999;
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 0.3vh 0.7vw;
+}
+/* DROPDOWN MENU */
+.services {
+    position: relative; 
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    border-radius: 8px;
+    top: 35px;
+    transition: 10s;
+}
+.dropdown li + li {
+    margin-top: 10px;
+}
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+.services:hover .dropdown {
+    display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU  */
+input[type=checkbox]{
+    display: none;
+} 
+.toggle-label {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/*** SLIDER ***/
+.slider {
+    padding: 0px;;
+}   
+.slider-item{
+    display: none;
+    position: relative;
+}
+.active{
+    display: block;
+}
+.slider-item img{
+    height: 700px;
+    width: 100%;
+}
+.slider-caption{
+    position: absolute;
+    background-color: black;
+    opacity: 0.4;
+    width: 60%;
+    height: 7rem;
+    margin-left: 20%;
+    box-shadow: 0px 0 25px #4c9e9e;
+    top: 42%;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    transition: 1s;
+}
+.slider-caption:hover{
+    opacity: 0.7;
+    color: #4c9e9e;
+}
+.slider-caption p{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0%;
+}
+.slider-caption button{
+    background: none;
+    border: 1px solid #fff
+}
+.slider-caption button:hover{
+    border: 2px solid #4c9e9e
+}
+.slider-caption button a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+}
+.slider-control{
+    justify-content: space-between;
+    position: absolute;
+    display: flex;
+    top: 47%;
+    width: 100%;
+}
+.slider-control button{
+    background: none;
+    border: none;
+}
+.slider-control button .slider-icon{
+    font-size: 3rem;
+    border-radius: 60%;
+    border: 2px solid #4c9e9e;
+    opacity: 0;
+    transition: 1s;
+}
+.slider:hover > .slider-control button .slider-icon{
+    opacity: 1;
+}
+.slider-control button .slider-icon:hover{
+    color: #fff;
+}
+
+/*** BACK TO TOP ***/
+.back-top-btn{
+    position: fixed;
+    font-size: 2em;
+    background-color: #236464;
+    color: #000;
+    border-radius: 50%;
+    padding: 7px;
+    right: 1%;
+    bottom: 1%; 
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+    z-index: 999;
+}
+.back-top-btn:hover{
+    background-color: #4c9e9e;
+    color: #fff;
+}
+
+/*** CONTENT ***/
+.content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.content .content-details{
+    width: 32%;
+    padding: 3px;
+    height: 100%;
+    border: 1px solid #000;
+}
+.content .content-details img{
+    width: 100%;
+    height: 70%;
+}
+
+/*** CONTACT ***/
+.contact{
+    padding: 3px 7px;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+    margin-top: 2rem;
+    margin-left: 5em;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    height: 46vh;
+}
+.contact{
+    box-shadow: 0px 0 35px rgba(68, 211, 216, 0.15);
+}
+.contact input{
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.contact .name , .contact .email{
+    width: 48%;
+    height: 7vh;
+    margin-top: 0.6rem;
+}
+.contact .email{
+    margin-left: 1.4rem;   
+}
+.contact .subject{
+    width: 99%;
+    height: 10vh;  
+}
+.contact .message{
+    width: 99%;
+    height: 15vh;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+}
+.contact .send{
+    height: 5vh;
+    background-color:#4c9e9e;
+    color: #fff;
+    margin-left: 45%;
+    border:none;
+    transition: 2s;
+}
+.contact .send:hover{
+    background-color:#236464;
+    color: #000;
+}
+
+/*** FOOTER ***/
+footer{
+    background-color: #236464;
+    padding-top: 10px;
+    width: 100%;
+}
+.social{
+    width: 100%;
+    display: flex;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.name{
+    width: 50%;
+}
+.name h2{
+    margin-left: 20%;
+
+}
+.social-logs{
+    width: 50%;
+    justify-content: end;
+    padding-left: 30%;
+}
+.social-logo{
+    padding-top: 1.3rem;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2rem;
+}
+.copyright{
+    margin-left: 30%;
+    margin-right:30%;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #4c9e9e;
+}
+
+
+/* APPLYING MEDIA QUERIES FOR EXTRA LARGE SECRREN */
+@media (max-width: 1024px) {
+    /* SLIDER */
+    .slider-item img{
+        height: 500px;
+        width: 100%;
+    }
+    /* CONTACT */
+    .contact .name , .contact .email{
+        width: 47.3%;
+    }
+    .contact .subject , .contact .message{
+        width: 98%;
+    }
+    .contact .email{
+        margin-left: 1rem;
+        
+    }
+    .contact .send{
+        margin-left: 42%;
+    }
+}
+
+/* APPLYING MEDIA QUERIES FOR LARGE SECRREN */
+@media (max-width: 768px) {
+     /* HEADER */
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .toggle-label {
+        display: block;
+    }
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 2.5vh 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+
+    /* SLIDER */
+    .slider-item img{
+        height: 400px;
+        width: 100%;
+    }
+    .slider-control{
+        top: 35%;
+    }
+
+    /* CONTACT */
+    .contact .name , .contact .email{
+        margin-top: 0.6rem;
+    }
+    .contact .email{
+        margin-left: 0.7rem;      
+    }
+
+    /* FOOTER */
+    .social{
+        font-size: 1.1rem;
+    }
+    .social-logs{
+        padding-left: 20%;
+    }
+    .social-logo{
+        padding-top: 1.3rem;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 2rem;
+    }
+}
+    
+/* APPLYING MEDIA QUERIES FOR MEDIUM SCREEN  */
+@media (max-width: 425px) {
+
+    /* BACK TO TOP BTN */
+    .back-top-btn{
+        font-size: 1.4rem;
+    }
+
+    /* SLIDER */
+    .slider-item img{
+        height: 350px;
+        width: 100%;
+    }
+
+    /* CONTENT */
+    .content{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+    }
+    .content .content-details{
+        width: 30%;
+        padding: 3px;
+        height: 100%;
+        border: 1px solid #000;
+    }
+    .content .content-details img{
+        width: 100%;
+        height: 80%;
+    }
+    .content .content-details p{
+        font-size: 8px;
+    }
+
+    /* CONTACT */
+    .contact{
+        margin-left: 3em;
+        margin-right: 3rem;
+        height: 38vh;
+    }
+    .contact .name , .contact .email {
+        width: 98%;
+        height: 4vh;
+        margin-top: 0;
+    }
+    .contact .email{
+        margin-left: 0;
+    }
+    .contact .subject{
+        height: 4vh;
+    }
+    .contact .message{
+        height: 10vh;
+    }
+    .contact .send{
+        margin-left: 30%;
+    }
+
+    /* FOOTER */
+    .social{
+        font-size: 0.7rem;
+    }
+    .social-logs{
+        padding-left: 7%;
+    }
+    .social-logo{
+        padding-top: 1.3rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-left: 1rem;
+    }
+    .copyright{
+        font-size: 0.9rem;
+    }
+}
+
+/* APPLYING MEDIA QUERIES FOR SMALL SCREEN  */
+@media (max-width: 320px) {
+    /* FOOTER */
+    .name{
+        width: 45%;
+    }
+    .social-logs{
+        padding-left: 1%;
+    }
+    .social-logo{
+        margin-left: 0.6rem;
+    }
+    .copyright{
+        font-size: 0.5rem;
+    }
+
+    /* SLIDER */
+    .slider-item img{
+        height: 320px;
+        width: 100%;
+    }
+    .slider-caption{
+        height: 5rem;
+        top: 45%;
+    }
+    .slider-caption p{
+        color: #fff;
+        font-size: 1.3em;
+        margin-bottom: 0;
+    }
+    .slider-control{
+        position: absolute;
+        top: 30%;
+    }
+    .slider-control button .slider-icon{
+        font-size: 1.4rem;
+    }
+}

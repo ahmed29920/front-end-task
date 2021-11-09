@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/style.css" />
+   <title>Task</title>
+ </head>
+ <body>
+    <!-- HEADER -->
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">JAWDA</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- CHECKBOX TOGGLE -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="toggle-label">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li class="services">
+                <a href="">Services</a>
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                    <li><a href="">Dropdown 1 </a></li>
+                    <li><a href="">Dropdown 2</a></li>
+                    <li><a href="">Dropdown 2</a></li>
+                    <li><a href="">Dropdown 3</a></li>
+                    <li><a href="">Dropdown 4</a></li>
+                </ul>
+                </li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Products</a></li>
+                <li><a>+123456789</a></li>
+            </div>
+        </ul>
+    </nav>
+    <!-- END HEADER -->
+    <!--START SLIDER -->
+    <div class="slider">
+        <!-- slider content -->
+        <div class="slider-content" >
+            <div class="slider-item active"  >
+                <img src="imgs/slider1.jpg"  alt="slider">
+                <div class="slider-caption d-none d-md-block">
+                    <p>Slider 1</p>
+                    <button><a href="#"> view </a></button>
+                </div>
+            </div>    
+            <div class="slider-item"  >
+                <img src="imgs/slider2.jpg"  alt="slider">
+                <div class="slider-caption d-none d-md-block">
+                    <p>Slider 2</p>
+                    <button><a href="#"> view </a></button>
+                </div>
+            </div>
+            <div class="slider-item"  >
+                <img src="imgs/slider3.jpg"  alt="slider">
+                <div class="slider-caption d-none d-md-block">
+                    <p>Slider 3</p>
+                    <button><a href="#"> view </a></button>
+                </div>
+            </div>
+        </div>
+        <!-- sliding buttons-->
+        <div class="slider-control">
+            <div>
+                <button class="slider-control-next next" type="button">
+                    <span class="slider-icon">&#171;</span>
+                </button>
+            </div>
+            <div>
+                <button class="slider-control-prev prev" type="button">
+                    <span class="slider-icon">&#187;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- END SLIDER -->
+    <!-- start back-top-btn-->
+    <span class="back-top-btn">&#10506;</span>
+    <!--end back-top-btn-->
+    <!-- START CONTENT -->
+    <div class="content">
+        <div class="content-details">
+            <img src="imgs/content3.jpg" alt="content image">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Sed facere asperiores aliquid eveniet ad est aperiam, laboriosam quaerat dignissimos, minus maxime nihil fuga debitis laborum,
+                  provident perspiciatis nam magnam ab.
+            </p>
+        </div>
+        <div class="content-details">
+            <img src="imgs/content1.jpg" alt="content image">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Sed facere asperiores aliquid eveniet ad est aperiam, laboriosam quaerat dignissimos, minus maxime nihil fuga debitis laborum,
+                  provident perspiciatis nam magnam ab.
+            </p>
+        </div>
+        <div class="content-details">
+            <img src="imgs/content3.jpg" alt="content image">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Sed facere asperiores aliquid eveniet ad est aperiam, laboriosam quaerat dignissimos, minus maxime nihil fuga debitis laborum,
+                  provident perspiciatis nam magnam ab.
+            </p>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+    <!-- START CONTACT -->
+    <div class="contact">
+        <form action="">
+            <input type="text" name="name" class="name" placeholder="Your name">
+            <input type="email" name="email" class="email" placeholder="Your email">
+            <input type="text" name="" class="subject" placeholder="Subject">
+            <textarea class="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="button" class="send" value="Send message">
+        </form>
+    </div>
+    <!-- END CONTACT -->
+    <!-- START FOOTER -->
+    <footer>
+        <div class="social">
+            <div class="name">
+                 <h2>JAWDA</h2>
+            </div>
+            <div class="social-logs">
+                <img src="imgs/fb.png" alt="facebook" class="social-logo">
+                <img src="imgs/insta.png" alt="instagram" class="social-logo">
+                <img src="imgs/twiter.png" alt="twiter" class="social-logo">
+                <img src="imgs/whatsapp.png" alt="whats app" class="social-logo">
+            </div>
+        </div>          
+        <div class="copyright">
+           <p> &copy; Copyright <strong><span>JAWDA</span></strong>. All Rights Reserved </p>
+            <div class="credits">
+                Designed by Ahmed Ashraf </a>
+            </div>
+        </div>
+    
+    </footer>
+    <!-- END FOOTER -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/custom.js"></script>
+ </body>
+</html>
